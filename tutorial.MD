@@ -36,4 +36,6 @@ Step 8: Automate the Pipeline with AirFlow.
 - remeber to install all necessary modeules in the composer instance.
 - the dag will run every 5 minutes and will load the data from the csv file into big
 - trigger your dag and check the logs to see if there are any issues.
+- make sure to use the right pipeline name, and instance name in the dag.
+- Use the ">>" symbol to signify dependency in your workflow. This means that the dag will run the first task and then the second task. If the first task fails, the second task will not run.
 
